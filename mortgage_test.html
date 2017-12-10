@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест ипотечного калькулятора</title>
+
+    <script type="text/javascript" src="js/mortgage_loans.js"></script>
+</head>
+<body>
+
+
+<div style="padding: 10px">
+    <label for="sumObj">
+        Стоимость объекта
+    </label>
+    <input type="text" id="sumObj" value="0" />
+</div>
+<div style="padding: 10px">
+    <label for="initialFee">
+        Первоначальный взнос
+    </label>
+    <input type="text" id="initialFee" value="0" />
+</div>
+<div style="padding: 10px">
+    <label for="term">
+        Срок
+    </label>
+    <input type="text" id="term" value="0" />
+</div>
+<div style="padding: 10px">
+    <label>Категория заемщика<br />
+        <input type="radio" id="radio1" name="radio-773" value="Получатель зарплаты"/> Получатель зарплаты
+        <input type="radio" id="radio2" name="radio-773" value="Общие условия" checked="checked" /> Общие условия
+    </label>
+</div>
+<div style="padding: 10px">
+    <label for="costs">
+        Сумма доп затрат
+    </label>
+    <input type="text" id="costs" value="0" />
+</div>
+
+<div style="padding: 10px">
+    <button id="button" type="submit">Рассчитать</button>
+</div>
+
+
+<div style="padding: 10px">
+    <label for="cred">
+        Сумма кредита
+    </label>
+    <input type="text" id="cred" value="" />
+</div>
+
+<div style="padding: 10px">
+    <label for="prog">
+        Программа
+    </label>
+    <input type="text" id="prog" value="" />
+</div>
+<div style="padding: 10px">
+    <label for="i_rate">
+        Ставка
+    </label>
+    <input type="text" id="i_rate" value="" />
+</div>
+<div style="padding: 10px">
+    <label for="sum_credit">
+        Сумма кредита
+    </label>
+    <input type="text" id="sum_credit" value="" />
+</div>
+<div style="padding: 10px">
+    <label for="pay">
+        Платеж
+    </label>
+    <input type="text" id="pay" value="" />
+</div>
+<div style="padding: 10px">
+    <label for="i_ef_rate">
+        Эффективная ставка
+    </label>
+    <input type="text" id="i_ef_rate" value="" />
+</div>
+
+<div>
+    Кредитные программы <br>
+    <div>
+        1 <br>
+        <div id="itogSum0"></div>
+        <div id="rate0"></div>
+        <div id="pay0"></div>
+        <div id="ef_rate0"></div>
+    </div>
+    <div>
+        2 <br>
+        <div id="itogSum1"></div>
+        <div id="rate1"></div>
+        <div id="pay1"></div>
+        <div id="ef_rate1"></div>
+    </div>
+    <div>
+        3 <br>
+        <div id="itogSum2"></div>
+        <div id="rate2"></div>
+        <div id="pay2"></div>
+        <div id="ef_rate2"></div>
+    </div>
+    <div>
+        4 <br>
+        <div id="itogSum3"></div>
+        <div id="rate3"></div>
+        <div id="pay3"></div>
+        <div id="ef_rate3"></div>
+    </div>
+    <div>
+        5 <br>
+        <div id="itogSum4"></div>
+        <div id="rate4"></div>
+        <div id="pay4"></div>
+        <div id="ef_rate4"></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
